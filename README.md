@@ -13,4 +13,4 @@ Este proyecto en una plataforma informativa, desarrollo web, que proporciona inf
 #Tecnologias utilizadas
 - frontend: html, css
 - backend: python, flask y entornos virtuales
-- bases de datos: sqlite
+
