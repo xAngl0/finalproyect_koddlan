@@ -1,0 +1,385 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap");
+body::-webkit-scrollbar {
+  width: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.2em;
+  background: linear-gradient(180deg, #fefefe 0%, #242424 85%);
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  min-height: 100vh;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 800px; /* Limit the width for better readability */
+  padding: 20px;
+  margin-top: 0; /* Remove top margin */
+}
+.section {
+  margin-bottom: 20px; /* Reduce space between sections */
+  text-align: center;
+}
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+h1,
+h2 {
+  font-weight: 700;
+  font-size: 42px;
+}
+
+img {
+  object-fit: contain;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 0.2s;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header {
+  display: flex;
+  justify-content: center;
+  padding: 30px 0;
+  width: 100%;
+}
+.main-list {
+  display: flex;
+  gap: 150px;
+}
+.list-item__link {
+  position: relative;
+  font-size: 26px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.list-item__link::after {
+  position: absolute;
+  transition: 0.2s;
+  content: "";
+  border-radius: 10px;
+  width: 55%;
+  height: 3px;
+  bottom: -12px;
+  background: #000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.list-item__link:hover::after {
+  width: 100%;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: none; /* Remove background image */
+  padding: 5vh 10vw 80vh 10vw;
+  gap: 40px;
+}
+.home__image {
+  width: 600px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+  margin-top: 20px; /* Add some margin if needed */
+}
+.list-item__link {
+  font-size: 24px;
+  text-transform: uppercase;
+  position: relative;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 1,5s ease; /* Make the transition smoother and slower */
+}
+.list-item__link:hover {
+  transform: translateY(10px);
+}
+
+.home__subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  line-height: 1.5; /* Adjust line height for better spacing */
+  margin: 50px 0 130px 0; /* Add bottom margin to separate from the next section */
+  color: #673d1d; /* Ensure the correct color is applied */
+}
+.skills__title{
+  margin: 60px auto; /* Increase top margin to ensure separation */
+  font-size: 60px;
+  text-align: center;
+  color: #a43535; /* Updated color to match the requested color */
+  line-height: 1.2; /* Adjust line height for better spacing */
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.skills__title::after {
+  content: none; /* Remove the pseudo-element */
+}
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  color: #fff;
+  margin-top: -200px; /* Move the section upwards */
+}
+.skill__img {
+  width: 150px; /* Set width for circular shape */
+  height: 150px; /* Set height for circular shape */
+  border-radius: 50%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the area */
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.skill__info {
+  width: 150px;
+}
+.skill__button {
+  font: inherit;
+  font-weight: 70;
+  color: #E6F7E1; /* Change text color for contrast */
+  background: #3A4F41; /* Set a light background color for contrast */
+  border: none; /* Remove border */
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Add transition for animation */
+  border-radius: 20px;;
+}
+.skill__button:hover {
+  transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.project__img{
+  border-radius: 30px;
+}
+.project__link {
+  position: relative;
+  font-size: 20px;
+  font-weight: 700;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project__link:hover::after {
+  width: 100%;
+}
+.feedback {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.feedback__title {
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  color: #1c1515;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+.feedback__title::after {
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  width: 60%;
+  height: 1px;
+  bottom: -13px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: center;
+  gap: 20px;
+}
+.form label {
+  width: 100%;
+}
+.form__input {
+  width: 100%;
+  font: inherit;
+  background: #424B54;
+  border: 2px solid #424B54;
+  color: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+}
+.form__input::placeholder {
+  color: #C9D1D9;
+}
+.form__input:active,
+.form__input:focus,
+.form__input:focus-visible {
+  border: none;
+}
+.list-item__link#welcome-link {
+  color: #000; /* Change text color for "GO BACK" */
+}
+.home__title {
+  color: #000; /* Change text color for "COMUNES" */
+}
+.form__input:active,
+.form__input:focus,
+.form__input:focus-visible {
+  border: none;
+}
+.home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: none;
+  padding: 2vh 10vw; /* Reduce padding to bring sections closer */
+  gap: 20px; /* Reduce gap between elements */
+}
+.about {
+  margin-top: 0; /* Remove top margin to bring it closer to the previous section */
+  margin-bottom: 200px;
+}
+.about__title {
+  font-size: 60px;
+  position: relative;
+  text-align: left;
+  color: #bdd1c2;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  margin-bottom: 50px;
+}
+.about__title::after {
+  position: absolute;
+  content: "";
+  border-radius: 10px;
+  width: 60%;
+  height: 1px;
+  bottom: -13px;
+  background: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.info-block {
+  display: flex;
+  justify-content: space-between;
+}
+.info-block__text {
+  width: 40%;
+  color: #C9D1D9;
+}
+.info-block__img {
+  align-self: center;
+}
+.skills {
+  margin-bottom: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+  text-align: center;
+}
+.skills__title {
+  margin: 0 auto; /* Center the title horizontally */
+  margin-top: -100px; /* Adjust vertical position if needed */
+  margin-bottom: 200px;
+  font-size: 60px;
+  text-align: center;
+  color: #3d3c3c;
+  line-height: 1;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
+.skills__title::after {
+  content: none; /* Remove the pseudo-element */
+}
+.skills-list {
+  display: flex;
+  justify-content: center;
+  gap: 100px;
+  flex-wrap: wrap;
+  color: #000000;
+  margin-top: -200px; /* Move the section upwards */
+}
+.skill__img {
+  width: 100px; /* Set a fixed width for horizontal shape */
+  height: 100px; /* Set a fixed height for horizontal shape */
+  border-radius: 50px; /* Rounded corners */
+  object-fit: cover; /* Ensure the image covers the area */
+  display: block; /* Ensure the image is displayed as a block element */
+  
+}
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  text-align: center;
+}
+.skill__info {
+  width: 150px;
+}
+.skill__button {
+  font: inherit;
+  font-weight: 700;
+  font-size: 20px;
+  color: #343131; /* Change text color to black */
+  background: #b2b1b0; /* Set background color */
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border-radius: 50px;
+  padding: 10px 40px; /* Increase button size */
+}
+.skill__button:hover {
+  background-color: #b2b1b0; /* Change background on hover */  
+  transform: scale(1.05);
+}

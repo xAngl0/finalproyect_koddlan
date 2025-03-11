@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <title>NO A LA CONTAMINACION</title>
+  </head>
+  <body>
+    <header class="header">
+      <nav class="header__nav main-nav">
+        <ul class="main-nav__list main-list">
+          <li class="main-list__item list-item">
+            <a class="list-item__link" href="#home" id="welcome-link">WELCOME</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <!-- Vista previa -->
+      <section class="main__home home" id="home">
+        <h1 class="home__title">RANKING DE LOS OBJETOS CONTAMINANTES</h1>
+        <p class="home__subtitle">por favor evita contaminar el planeta</p>
+        <img class="home__image" src="../static/img/planetacofcof.png" alt="Planet Image" title="Planeta contaminado">
+      </section>
+      <!-- Acerca del proyecto-->
+      <section class="main__about about" id="about">
+        <h2 class="about__title">ACERCA DEL PROYECTO</h2>
+        <div class="about__info info-block">
+          <p class="info-block__text">
+            DAR INFORMACIÓN DE OBJETOS CONTAMINANTES QUE SON COMUNES DE VER 
+            Y OTROS QUE NO LO SON, CLASIFICAR Y CONCIENTIZAR A 
+            LAS PERSONAS QUE ALGUNOS OBJETOS SON MAS CONTAMINANTES QUE OTROS.
+          </p>
+        </div>
+      </section>
+      <!-- Sección de competencias -->
+      <section class="main__skills skills" id="skills">
+        <h2 class="skills__title">ESCOJA UNA FRECUENCIA DE CONTAMINACION</h2>
+        <form action="/" method="POST">
+          <ul class="skills__list skills-list">
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="static\img\comunes\cm8.jpg"
+                alt="comunes"
+                width="150"
+                height="200"
+              />
+              <span class="skill__info">Objetos que se encuentran de forma regular</span>
+              <input class="skill__button" type="submit" name="button_comunes" value="COMÚNES">
+            </li> 
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="static\img\raros\rr4.jpg"
+                alt="raros"
+                width="210"
+                height="200"
+              />
+              <span class="skill__info">Objetos que se encuentran de forma no tan comun</span>
+              <input class="skill__button" type="submit" name="button_raros" value="RAROS">
+            </li>
+            <li class="skills-list__skill skill">
+              <img
+                class="skill__img"
+                src="static\img\ultrararos\m6.jpg"
+                alt="ultrararos"
+                width="250"
+                height="200"
+              />
+              <span class="skill__info">Objetos que se encuentran en lugares especificos</span>
+              <input class="skill__button" type="submit" name="button_ultrararos" value="ULTRARAROS">
+            </li>
+          </ul>
+        </form>
+      </section>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">
+        &copy; 2025 NO A LA CONTAMINACION. Todos los derechos reservados.
+      </p>
+    </footer>
+  </body>
+
+      

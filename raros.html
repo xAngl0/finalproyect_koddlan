@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0">
+    <link rel="stylesheet" href="static\css\rarostyle.css"/>
+    <title>RAROS</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__nav main-nav">
+          <ul class="main-nav__list main-list">
+            <li class="main-list__item list-item">
+              <a class="list-item__link" href="/" id="welcome-link">GO BACK</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <!-- Vista previa -->
+        <section class="main__home home" id="home">
+          <h1 class="home__title">RAROS</h1>
+          <p class="home__subtitle">NO EN LUGARES CONCURRIDOS, PERO VISIBLES
+            EN CIERTOS LUGARES
+          </p>
+        </section>
+        <!-- Sección de competencias -->
+        <section class="main__skills skills" id="skills">
+          <h2 class="skills__title">ESCOJA UN NIVEL DE CONTAMINACION</h2>
+          <form action="/raros" method="POST">
+            <ul class="skills__list skills-list">
+              <li class="skills-list__skill skill">
+                <img
+                  class="skill__img"
+                  src="static\img\bajo.png"
+                  alt="bajo"
+                  width="150"
+                  height="200"
+                />
+                <span class="skill__info">pueden ser recogidos por personas o brigadas</span>
+                <input class="skill__button" type="submit" name="button_bajo" value="BAJO">
+              </li> 
+              <li class="skills-list__skill skill">
+                <img
+                  class="skill__img"
+                  src="static\img\medio.png"
+                  alt="medio"
+                  width="210"
+                  height="200"
+                />
+                <span class="skill__info">Requieren intervención de autoridades</span>
+                <input class="skill__button" type="submit" name="button_medio" value="MEDIO">
+              </li>
+              <li class="skills-list__skill skill">
+                <img
+                  class="skill__img"
+                  src="static\img\alto.png"
+                  alt="alto"
+                  width="250"
+                  height="200"
+                />
+                <span class="skill__info">requieren tratamiento de especialistas
+                </span>
+                <input class="skill__button" type="submit" name="button_alto" value="ALTO">
+              </li>
+            </ul>
+          </form>
+        </section>
+    </main>
+</body>
+</html>
