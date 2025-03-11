@@ -1,6 +1,6 @@
-# 🌍Bienvenido a La Plataforma Informativa sobre Contaminación
+# 🌍Bienvenido a EcoFreak
 
-Bienvenido a **La plataforma informativa sobre la contaminación**, una plataforma web informativa dedicada a proporcionar datos esenciales sobre objetos contaminantes y su impacto en el medio ambiente.
+Bienvenido a **EcoFreak**, una plataforma web informativa dedicada a proporcionar datos esenciales sobre objetos contaminantes y su impacto en el medio ambiente.
 
 ## ✨ Funcionalidades
 
